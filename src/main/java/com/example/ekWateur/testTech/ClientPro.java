@@ -29,10 +29,8 @@ public class ClientPro extends Client implements ClientEkwateur {
     public double calculerMontantFacture() {
         double prixKWhElectricite = ca > VAR_CA ? VAR_KWH_ELECTRICITY_PRO_SUP : VAR_KWH_ELECTRICITY_PRO_INF;
         double prixKWhGaz = ca > VAR_CA ? VAR_KWH_GAZ_PRO_SUP : VAR_KWH_GAZ_PRO_INF;
-
         double montantElectricite = consommationElectricite * prixKWhElectricite;
         double montantGaz = consommationGaz * prixKWhGaz;
-
         return montantElectricite + montantGaz;
     }
 }
