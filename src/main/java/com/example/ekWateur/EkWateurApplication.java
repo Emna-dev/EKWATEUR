@@ -8,7 +8,7 @@ import com.example.ekWateur.testTech.ClientEkwateur;
 public class EkWateurApplication {
 
     public static void main(String[] args) {
-        ClientEkwateur clientPro = new ClientPro("123456789", "Enreprise",1200000, 5000, 3000);
+        ClientEkwateur clientPro = new ClientPro("47852256", "Enreprise",1400000, 5000, 3000);
         ClientEkwateur clientParticulier = new ClientParticulier( "M.", "Dupont", "Pierre", 3000, 2000);
 
         double montantFacturePro = clientPro.calculerMontantFacture();
